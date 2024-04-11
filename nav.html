@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>NavBar</title>
+</head>
+
+<!-- https://github.com/bedimcode/responsive-navbar/blob/main/assets/js/main.js -->
+<!-- https://www.youtube.com/watch?v=HV5JKDCr3tY&list=PL07efmqYWHZ81_zqshUgM-tz40MtzOmN9&index=12 -->
+
+<body>
+    <nav class="nav" id="nav">
+        <div class="nav__menu container" id="nav-menu">
+            <div class="nav__shape">
+
+            </div>
+
+            <div class="nav__close" id="nav-close">
+                <i class='bx bx-x' style='color:#ffffff' ></i>
+            </div>
+
+            <div class="nav__data">
+                <div class="nav__mask">
+                    <img src="https://static.thenounproject.com/png/94090-200.png" alt="" class="nav__img">
+                </div>
+                <span class="nav__greeting">
+                    Hola, mi nombre es
+                </span>
+                <h1 class="nav__name"> 
+                    Ana María <br> Orozco
+                </h1>
+            </div>
+
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">
+                        <i class='bx bx-home'></i>
+                        Inicio
+                    </a>
+                </li>                
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">
+                        <i class='bx bx-user'></i>
+                        Sobre mí
+                    </a>
+                </li>                             
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                        <i class='bx bx-bookmark-heart'></i>
+                        Habilidades
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#portafolio" class="nav__link">
+                        <i class='bx bx-briefcase'></i>
+                        Portafolio
+                    </a>
+                </li>   
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">
+                        <i class='bx bx-envelope'></i>
+                        Contácteme
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- -----------------------------------MAIN--------------------------------- -->
+    <main class="main" id="main">
+        <header class="header" id="header">
+            <nav class="header__nav container">
+                <a href="#" class="header__logo">
+                    Orozco
+                </a>
+
+                <!-- Toggle Button -->
+                <div class="header__toggle" id="header-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+
+        <section class="section section__height container" id="home">
+            <h1>INICIO</h1>
+        </section>
+
+        <section class="section section__height container" id="about">
+            <h1>SOBRE MÍ</h1>
+        </section>
+
+        <section class="section section__height container" id="skills">
+            <h1>HABILIDADES</h1>
+        </section>
+
+        <section class="section section__height container" id="portafolio">
+            <h1>PORTAFOLIO<h1>
+        </section>
+        
+        <section class="section section__height container" id="contact">
+            <h1>CONTÁCTEME</h1>
+        </section>        
+    </main>
+    
+    <!-- -----------------------------------SCRIPT------------------------------- -->
+    <script src="script.js"></script>
+</body>
+</html>
